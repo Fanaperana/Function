@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int findx ( const int MAX, const int MIN )
+{
+    int x;
+    srand(time(NULL));
+    x = (rand() % (MAX - MIN + 1)) + MIN;
+    
+    return x;
+}
